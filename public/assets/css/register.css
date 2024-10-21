@@ -1,0 +1,412 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+header {
+  background-color: #ffffff;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.header-container img{
+  width :15%;
+  height : 15%;
+}   
+nav a {
+  color: rgb(231, 91, 10);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 102, 153, 0.5);
+}
+
+.container {
+max-width: 700px;
+margin: 50px auto;
+padding: 20px;
+background-color: transparent;
+opacity: 0.9;
+font-size: 19px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+width: 20%;
+padding: 10px;
+margin-top: 10px;
+border: 1px solid #ccc;
+border-radius: 12px;
+box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+margin-right: 10px;
+}
+
+.checkbox-container {
+margin-top: 20px;
+display: flex;
+align-items: center;
+}
+
+.button {
+background-color: #000000;
+color: white;
+padding: 15px 30px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+margin-top: 20px;
+display: block;
+width: 250px;
+text-align: center;
+font-size: 18px;
+margin-left: auto;
+margin-right: auto;
+transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+background-color: #e75b0a;
+transform: scale(1.05);
+box-shadow: 0 4px 15px rgba(231, 91, 10, 0.4);
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #B7B7B7;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo{
+  margin-bottom: 30px;
+}
+footer h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+footer .follow{
+  margin-top: 20px;
+}
+footer .follow i{
+  color: #000000;
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .install .row img{
+  border: 1px solid rgb(231, 91, 10);
+  border-radius: 6px;
+}
+footer .install img{
+  margin: 10px 0  15 px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+  color: rgb(231, 91, 10);
+} */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+ 
+}
+
+header {
+  background-color: #ffffff;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.header-container img{
+  width :15%;
+  height : 15%;
+}   
+nav a {
+  color: rgb(231, 91, 10);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 102, 153, 0.5);
+}
+/* 
+.container {
+max-width: 700px;
+margin: 50px auto;
+padding: 20px;
+background-color: transparent;
+opacity: 0.9;
+font-size: 19px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+width: 20%;
+padding: 10px;
+margin-top: 10px;
+border: 1px solid #ccc;
+border-radius: 12px;
+box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+margin-right: 10px;
+}
+
+.checkbox-container {
+margin-top: 20px;
+display: flex;
+align-items: center;
+}
+
+.button {
+background-color: red;
+color: white;
+padding: 15px 30px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+margin-top: 20px;
+display: block;
+width: 250px;
+text-align: center;
+font-size: 18px;
+margin-left: auto;
+margin-right: auto;
+transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+background-color: #e75b0a;
+transform: scale(1.05);
+box-shadow: 0 4px 15px rgba(231, 91, 10, 0.4);
+} */
+form {
+  background-color: #e7f9e5;
+  /* padding: 30px; */
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-left: 100px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 50px;
+  margin-left: 650px;
+  color: #4CAF50;
+  
+
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+label {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 50%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Placeholder styling for inputs */
+input::placeholder {
+  color: #999;
+}
+
+/* Styling for the select dropdown */
+select {
+  padding: 10px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+/* Checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-container a {
+  color: #e75b0a;
+  text-decoration: none;
+}
+
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 20px;
+  margin-left: 180px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 25%;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: #cc4a06;
+  transform: scale(1.05);
+}
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #B7B7B7;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+footer .logo{
+  margin-bottom: 30px;
+}
+footer h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+footer .follow{
+  margin-top: 20px;
+}
+footer .follow i{
+  color: #000000;
+  padding-right: 4px;
+  cursor: pointer;
+}
+footer .install .row img{
+  border: 1px solid rgb(231, 91, 10);
+  border-radius: 6px;
+}
+footer .install img{
+  margin: 10px 0  15 px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+  color: rgb(231, 91, 10);
+}

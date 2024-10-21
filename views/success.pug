@@ -1,0 +1,12 @@
+extends layout
+
+block head
+  link(rel='stylesheet', href='/assets/css/success.css')
+
+block content
+  //- Success message container
+  .success-container
+    h1 Registration Successful
+    p Congratulations! You have successfully registered.
+    a(href='/', class='btn') Go back to Home
+    a(href='/login' class='btn') Proceed to Login

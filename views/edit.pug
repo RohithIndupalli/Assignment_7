@@ -1,0 +1,12 @@
+extends layout
+
+block head
+  link(rel='stylesheet', href='/assets/css/edit.css')
+
+block content
+  .container
+    h1 Edit #{field}
+    form(action=`/update/${field}`, method='POST')
+      input(type='text', name=field, value=user[field], required)
+      button(type='submit') Save Changes
+    a(href='/profile') Cancel

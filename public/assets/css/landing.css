@@ -1,0 +1,256 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+.header-container img{
+    width :15%;
+    height : 15%;
+}   
+#menu-toggle {
+  font-size: 24px;
+  background: none;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -3px 0 5px rgba(0,0,0,0.2);
+  transition: right 0.3s;
+  padding: 20px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+}
+
+#sidebar ul li {
+  margin: 15px 0;
+}
+
+#sidebar ul li a {
+  text-decoration: none;
+  color: #7d003f;
+}
+
+#close-menu {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #7d003f;
+  cursor: pointer;
+}
+nav a {
+    color: rgb(231, 91, 10);
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 102, 153, 0.5);
+}
+/* Search Section */
+.search-section {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.search-boxes input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 40px; /* Adjust the padding to give it a cylindrical shape */
+    font-size: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px; /* Creates the cylinder shape */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a smooth look */
+}
+
+button:hover {
+    background-color: rgb(231, 91, 10); /* Hover effect */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+button:active {
+    transform: scale(1); /* Resets on click */
+}
+
+
+.tailored-jobs {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dropdown {
+    width: 200px;
+}
+
+.dropdown-header {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-header:hover {
+    background-color: #e0e0e0;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    padding: 5px 0;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.country-selector {
+    text-align: center;
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #B7B7B7;
+  }
+  footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  footer .logo{
+    margin-bottom: 30px;
+  }
+  footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+  }
+  footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  footer .follow{
+    margin-top: 20px;
+  }
+  footer .follow i{
+    color: #000000;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+  footer .install .row img{
+    border: 1px solid rgb(231, 91, 10);
+    border-radius: 6px;
+  }
+  footer .install img{
+    margin: 10px 0  15 px 0;
+  }
+  footer .follow i:hover,
+  footer a:hover{
+    color: rgb(231, 91, 10);
+  }
+
+
+  /* Success message styling */
+/* .success-container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #4CAF50;
+  background-color: #e7f9e5;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.success-container h1 {
+  color: #4CAF50;
+}
+
+.success-container p {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+} */

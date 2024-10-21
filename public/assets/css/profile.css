@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .profile-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Keeps aspect ratio */
+    border: 2px solid #333;
+  }
+  
+  .profile-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .edit-icon {
+    color: #007bff; /* Change icon color */
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .edit-icon:hover {
+    color: #0056b3; /* Darker color on hover */
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+  }
+  
+
+  .profile-photo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo img.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .profile-photo form {
+    margin-top: 10px;
+  }
+  
+  .profile-photo button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile-photo button:hover {
+    background-color: #45a049;
+  }
+
+  
+/* Base style for both buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+  }
+  
+  /* Back to Dashboard button style */
+  .btn-dashboard {
+    background-color: #3498db; /* Blue color */
+    color: white;
+    border: 1px solid #3498db;
+  }
+  
+  .btn-dashboard:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Logout button style */
+  .btn-logout {
+    background-color: #e74c3c; /* Red color */
+    color: white;
+    border: 1px solid #e74c3c;
+  }
+  
+  .btn-logout:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  /* Make buttons more interactive on hover */
+  .btn:hover {
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  

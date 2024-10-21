@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  main
+    section.search-section
+      h2 Find Your Next Job
+      .search-boxes
+        input(type='text', id='job-title', placeholder='Job Title, Keywords')
+        input(type='text', id='location', placeholder='Location')
+        button(onclick='searchJobs()') Search Jobs
+    
+    section.tailored-jobs
+      h2 A Job Search Tailored for You
+      .dropdowns
+        .dropdown#jobs-dropdown
+          h3.dropdown-header(onclick='toggleDropdown("jobs")') Jobs 
+            span &#9660;
+          .dropdown-content#jobs-content
+            ul#jobs-list
+              //- Jobs list will be populated here
+        
+        .dropdown#cities-dropdown
+          h3.dropdown-header(onclick='toggleDropdown("cities")') Cities 
+            span &#9660;
+          .dropdown-content#cities-content
+            ul#cities-list
+              //- Cities list will be populated here
+        
+        .dropdown#companies-dropdown
+          h3.dropdown-header(onclick='toggleDropdown("companies")') Companies 
+            span &#9660;
+          .dropdown-content#companies-content
+            ul#companies-list
+              //- Companies list will be populated here
+
+    section.country-selector
+      h2 Select a Country
+      div
+        select#country-dropdown(onchange='fetchJobsByCountry()')
+          option(value='') Select a Country

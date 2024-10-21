@@ -1,0 +1,13 @@
+header
+   .header-container
+      img(src='/assets/images/img 2.jpg' alt='Job Aggregator Logo')
+      link(rel='stylesheet', href='/assets/css/landing.css')
+      nav
+        a(href='/') Home
+        a(href='/jobs') Available Jobs
+        if !user
+          a(href='/login') Sign In
+          a(href='/register') Create an Account
+        else
+          a(href='/profile') Profile
+          a(href='/logout') Logout

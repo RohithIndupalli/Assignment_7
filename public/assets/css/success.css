@@ -1,0 +1,32 @@
+.success-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    background-color: #e7f9e5;
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+  .success-container h1 {
+    color: #4CAF50;
+  }
+  
+  .success-container p {
+    font-size: 18px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }

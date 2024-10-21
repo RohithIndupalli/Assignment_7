@@ -1,0 +1,18 @@
+extends layout
+
+block head 
+  link(rel='stylesheet', href='/assets/css/jobs.css')
+
+
+block content
+  .jobs-list-container
+    h2 6 Jobs
+    .jobs
+      // Placeholder for job data
+      each job in [1, 2, 3, 4, 5, 6]
+        .job
+          img(src="./assets/images/software img.png" alt="Job Image")
+          h3.job-title Software Engineer
+          .details Responsible for designing, developing, and maintaining software systems and applications.
+          a.details-btn(href="#") More Details
+          span.open-position 4 Open Positions

@@ -1,0 +1,12 @@
+extends layout
+
+
+block head
+  link(rel='stylesheet', href='/assets/css/dashboard.css')
+
+block content
+  .dashboard
+    h1 Welcome to your Dashboard!
+    p You have successfully logged in.
+
+    a.button(href="/logout") Logout

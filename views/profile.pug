@@ -1,0 +1,191 @@
+//- //- extends layout
+
+//- //- block head 
+//- //-   link(rel='stylesheet', href='/assets/css/profile.css')
+
+
+//- //- block content
+
+//- //-   body
+//- //-     h1 User Profile
+//- //-     p Name: #{user.name}
+//- //-     p Email: #{user.email}
+//- //-     p Phone: #{user.phone}
+//- //-     p Date of Birth: #{user.dob}
+//- //-     p Status: #{user.status}
+//- //-     a(href='/dashboard') Back to Dashboard
+//- //-     a(href='/logout') Logout
+
+//- extends layout
+
+//- block head 
+//-   link(rel='stylesheet', href='/assets/css/profile.css')
+//-   //- Include Font Awesome CDN for icons
+//-   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')
+
+//- block content
+//-   .container
+//-     h1 User Profile
+    
+//-     .profile-photo
+      
+//-       if user.profileImage
+//-         img.profile-img(src=user.profileImage, alt='Profile Picture')
+//-       else
+//-         img.profile-img(src='/path/to/default-image.jpg', alt='Default Profile Picture') 
+        
+      
+//-       form(action='/upload-profile-pic', method='POST', enctype='multipart/form-data')
+//-         input(type='file', name='profileImage', accept='image/*') 
+//-         button(type='submit') Upload Profile Picture
+
+//-     //- User Info Section
+//-     .user-info
+//-       .info-field
+//-         p Name: #{user.name}
+//-         a(href='/edit/name', class='edit-button') 
+//-           i(style='font-size:24px', class='fas fa-edit') 
+//-       .info-field
+//-         p Email: #{user.email}
+//-         a(href='/edit/email', class='edit-button') 
+//-           i(style='font-size:24px', class='fas fa-edit') 
+//-       .info-field
+//-         p Phone: #{user.phone}
+//-         a(href='/edit/phone', class='edit-button') 
+//-           i(style='font-size:24px', class='fas fa-edit') 
+//-       .info-field
+//-         p Date of Birth: #{user.dob}
+//-         a(href='/edit/dob', class='edit-button') 
+//-           i(style='font-size:24px', class='fas fa-edit') 
+//-       .info-field
+//-         p Status: #{user.status}
+//-         a(href='/edit/status', class='edit-button') 
+//-           i(style='font-size:24px', class='fas fa-edit') 
+
+//-     //- Links
+//-     a(href='/dashboard') Back to Dashboard
+//-     a(href='/logout') Logout
+
+
+
+//- extends layout
+
+//- block head 
+//-   link(rel='stylesheet', href='/assets/css/profile.css')
+//-   script(src='/assets/js/profile.js') 
+
+//- block content
+//-   body
+//-     h1 User Profile
+
+//-     // Profile Picture Section
+//-     .profile-photo
+//-       if user.profileImage
+//-         img.profile-img(src=user.profileImage, alt='Profile Picture')
+//-       else
+//-         img.profile-img(src='/path/to/default-image.jpg', alt='Default Profile Picture')
+      
+//-       form(action='/upload-profile-pic', method='POST', enctype='multipart/form-data')
+//-         input(type='file', name='profileImage', accept='image/*')
+//-         button(type='submit') Upload Profile Picture    
+
+//-     // Editable Fields Section
+//-     .profile-info
+//-       p Name: 
+//-         span#nameDisplay #{user.name}
+//-         input#nameInput(type='text' value=user.name style='display:none')
+//-         a(href='#' class='edit-icon' data-field='name') 
+//-           i(style='font-size:24px' class='fas') &#xf044;
+//-       p Email: 
+//-         span#emailDisplay #{user.email}
+//-         input#emailInput(type='text' value=user.email style='display:none')
+//-         a(href='#' class='edit-icon' data-field='email') 
+//-           i(style='font-size:24px' class='fas') &#xf044;
+//-       p Phone: 
+//-         span#phoneDisplay #{user.phone}
+//-         input#phoneInput(type='text' value=user.phone style='display:none')
+//-         a(href='#' class='edit-icon' data-field='phone') 
+//-           i(style='font-size:24px' class='fas') &#xf044;
+//-       p Date of Birth: 
+//-         span#dobDisplay #{user.dob}
+//-         input#dobInput(type='date' value=user.dob style='display:none')
+//-         a(href='#' class='edit-icon' data-field='dob') 
+//-           i(style='font-size:24px' class='fas') &#xf044;
+//-       p Status: 
+//-         span#statusDisplay #{user.status}
+//-         input#statusInput(type='text' value=user.status style='display:none')
+//-         a(href='#' class='edit-icon' data-field='status') 
+//-           i(style='font-size:24px' class='fas') &#xf044;
+
+//-     // Save Changes Button
+//-     button#saveChanges(style='display:none') Save Changes
+
+    
+//-     a.btn.btn-dashboard(href='/') Back to Home
+//-     a.btn.btn-logout(href='/logout') Logout
+
+
+extends layout
+
+block head 
+  link(rel='stylesheet', href='/assets/css/profile.css')
+  script(src='assets/js/profile.js')
+
+block content
+  .container
+    h1 User Profile
+
+    // Profile Picture Section
+    .profile-photo
+      if user.profileImage
+        img.profile-img(src=user.profileImage alt='Profile Picture')
+      else
+        img.profile-img(src='/path/to/default-image.jpg' alt='Default Profile Picture')
+      
+      form(action='/upload-profile-pic', method='POST', enctype='multipart/form-data')
+        input(type='file', name='profileImage', accept='image/*') 
+        button(type='submit') Upload Profile Picture    
+
+    // Editable Fields Section
+    .profile-info
+      p Name: 
+        span#nameDisplay #{user.name}
+        input#nameInput(type='text' value=user.name style='display:none')
+        a(href='#' class='edit-icon' data-field='name') 
+          <i style='font-size:24px' class='fas'>&#xf044;</i>
+        button#cancelName(style='display:none') Cancel
+
+      p Email: 
+        span#emailDisplay #{user.email}
+        input#emailInput(type='text' value=user.email style='display:none')
+        a(href='#' class='edit-icon' data-field='email') 
+          <i style='font-size:24px' class='fas'>&#xf044;</i>
+        button#cancelEmail(style='display:none') Cancel
+
+      p Phone: 
+        span#phoneDisplay #{user.phone}
+        input#phoneInput(type='text' value=user.phone style='display:none')
+        a(href='#' class='edit-icon' data-field='phone') 
+          <i style='font-size:24px' class='fas'>&#xf044;</i>
+        button#cancelPhone(style='display:none') Cancel
+
+      p Date of Birth: 
+        span#dobDisplay #{user.dob}
+        input#dobInput(type='date' value=user.dob style='display:none')
+        a(href='#' class='edit-icon' data-field='dob') 
+          <i style='font-size:24px' class='fas'>&#xf044;</i>
+        button#cancelDob(style='display:none') Cancel
+
+      p Status: 
+        span#statusDisplay #{user.status}
+        input#statusInput(type='text' value=user.status style='display:none')
+        a(href='#' class='edit-icon' data-field='status') 
+          <i style='font-size:24px' class='fas'>&#xf044;</i>
+        button#cancelStatus(style='display:none') Cancel
+
+    // Save Changes Button
+    button#saveChanges(style='display:none') Save Changes
+
+    // Back to Dashboard and Logout Links
+    a.btn(href='/dashboard') Back to Dashboard
+    a.btn(href='/logout') Logout

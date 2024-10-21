@@ -1,0 +1,64 @@
+//- extends layout
+
+//- block content
+//-   .container
+//-     h2 Registration Form
+//-     form#registrationForm
+//-       label(for="name") Name*:
+//-       input(type="text", id="name", name="name", placeholder="Name", required)
+//-       label(for="email") Email*:
+//-       input(type="email", id="email", name="email", placeholder="e-Mail", required)
+//-       label(for="phone") Phone Number*:
+//-       input(type="tel", id="phone", name="phone", placeholder="Tel-Number", required)
+//-       label(for="dob") Date of Birth*:
+//-       input(type="date", id="dob", name="dob", placeholder="mm/dd/yyyy", required)
+//-       label(for="status") Are you a Fresher or Working Professional:
+//-       select(id="status", name="status", required)
+//-         option(value="") Select
+//-         option(value="fresher") Fresher
+//-         option(value="professional") Working Professional
+//-       label(for="resume") Resume*: (Optional)
+//-       input(type="file", id="resume", name="resume", accept=".pdf,.doc,.docx")
+//-       .checkbox-container
+//-         input(type="checkbox", id="terms", name="terms", required)
+//-         label(for="terms") I accept the 
+//-           a(href="#") terms and conditions
+//-       button(type="submit", class="button", onclick="checkAge()") Register
+
+
+extends layout
+
+block head 
+  link(rel='stylesheet', href='/assets/css/register.css')
+
+
+block content
+  h1 Register Page
+  if error
+    p.error-message= error
+  form(action='/register', method='POST')
+    label(for="name") Name:
+    input(type="text", id="name", name="name", placeholder="Name", required)
+    label(for="email") Email:
+    input(type="email", id="email", name="email", placeholder="E-Mail", required)
+    label(for='username') Username:
+    input(type='text', name='username', required)
+    label(for='password') Password:
+    input(type='password', name='password', required)
+    label(for="phone") Phone Number:
+    input(type="tel", id="phone", name="phone", placeholder="Tel-Number", required)
+    label(for="dob") Date of Birth:
+    input(type="date", id="dob", name="dob", placeholder="mm/dd/yyyy", required)
+    label(for="status") Are you a Fresher or Working Professional:
+    select(id="status", name="status", required)
+      option(value="") Select
+      option(value="fresher") Fresher
+      option(value="professional") Working Professional
+    label(for="resume") Resume: (Optional)
+    input(type="file", id="resume", name="resume", accept=".pdf,.doc,.docx")
+    .checkbox-container
+      input(type="checkbox", id="terms", name="terms", required)
+      label(for="terms") I accept the 
+        a(href="#") terms and conditions
+    button(type="submit", class="button", onclick="checkAge()") Register
+  

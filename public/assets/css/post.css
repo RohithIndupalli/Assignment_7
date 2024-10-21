@@ -1,0 +1,153 @@
+/* *{
+    margin:0;
+    padding:0;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+
+}
+body{
+    background:white;
+}
+nav{
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    left:0;
+    background-color:rgb(231, 118, 53);
+    width:90px;
+    overflow:hidden;
+    transition :width 0.2s linear;
+    box-shadow:0.20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    text-align:center;
+    display:flex;  
+    transition: all 0.5s ease; 
+    margin:10px 0 0 10px;
+}
+.logo img{
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+}
+.logo span{
+   font-weight:bold ;
+    padding-left: 15px;
+    font-size:18px;
+    text-transform: uppercase;    
+}
+a{
+    position: relative;
+    color:rgb(0, 0, 0);
+    font-size: 14;
+    display:table;
+    width: 300px 10px;
+    padding:10px;
+}
+.fas{
+    position:relative;
+    width:70px;
+    height:40px;
+    top:14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position:relative;
+    top:12px;
+    margin-left: 10px; 
+}
+a:hover{
+    background:#eee;    
+}
+nav:hover{
+    width:280px;
+    transition: all 0.5s ease;
+}
+.logout{
+    position:absolute;
+    bottom:0;   
+}
+
+#head{
+    margin-left: 50%;
+    text-decoration:none;
+    font-size: xx-large;
+
+}
+#ace{
+    margin-left: 50%;
+    align-items: flex-start;
+    
+}
+#del{
+    margin-left:30% ;
+    width: 10px;
+}
+
+
+
+#reg{
+    position: relative;
+    top: 20%;
+    margin-left: 30%;
+    background-color: #FADFA1;
+    border-radius: 5px;
+    padding: 30px;
+    width: 650px;
+    box-shadow: 2px 2px 5px black;
+    border-color: black;
+}
+
+legend{
+    padding: 35px;
+    text-align: center;
+    font-size: x-large;
+}
+
+
+.reg h1{
+    margin-bottom: 20px;
+}
+
+#fname,#lname,#sec,#dob,#gender,#E-mail,#ph{
+    margin-left: 20px;
+    font-weight:bold;
+    font-size: medium;
+    
+}
+
+
+
+.input-height{
+    height: 40px;
+    border-radius: 5px;
+    border: #666666;
+    padding: 5px;
+    font-style: normal;
+   
+}
+
+
+#gender{
+    margin-bottom: 20px;
+
+}
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+} */
